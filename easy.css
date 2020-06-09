@@ -1,0 +1,19 @@
+.background {
+    background: center no-repeat
+      url(https://i.pinimg.com/originals/4a/f7/f6/4af7f615ed95eefe503ef17d03aa9410.jpg);
+  }
+  .logo {
+    background-image: url("dist/images/logo.svg");
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+  }
+  .progressBar {
+    background-color: rgb(100, 255, 221);
+  }
+  .splash {
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    /* background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20190223/ourmid/pngtree-business-technology-digital-high-tech-world-background-backgroundtechnology-backgroundhigh-tech-backgroundworld-image_79012.jpg); */
+  }
+  .watermark {
+    background-image: url(watermark.png);
+    background-size: 57px 57px;
+  }
