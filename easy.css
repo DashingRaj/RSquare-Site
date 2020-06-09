@@ -1,6 +1,6 @@
 .background {
     background: center no-repeat
-      url(https://i.pinimg.com/originals/4a/f7/f6/4af7f615ed95eefe503ef17d03aa9410.jpg);
+      url("dist/images/cast-app-background.jpg");
   }
   .logo {
     background-image: url("dist/images/logo.svg");
