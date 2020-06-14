@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href='common/window.css' />
+    <script src='common/jquery-2.1.1.min.js'></script>
+    <script src="//www.gstatic.com/cast/sdk/libs/receiver/2.0.0/cast_receiver.js"></script>
+    <script src="//www.gstatic.com/cast/sdk/libs/mediaplayer/1.0.0/media_player.js"></script>
+    <script src='common/controller.js'></script>
+    <script src='common/sketch.min.js'></script>
+    <script src='common/music.js'></script>
+    <script src='chromecast.js'></script>
+  </head>
+  <body style="margin: 0">
+    <div id="player" class="player" style='display: none;'>
+      <div id="crossfade">
+        <img class='transparent'></img>
+        <img class='transparent'></img>
+      </div>
+    	<div class="media">
+    		<video id='video' autoplay=true></video>
+    	</div>
+      <div id='audio'>
+        <div id='audioInner'>
+          <div id='albumArtContainer'>
+            <img id='albumArt'/>
+          </div>
+          <div id='songInfo'>
+            <div><h1 id='album'></h1></div>
+            <div><h1 id='song'></h1></div>
+          </div>
+        </div>
+      </div>
+      <div id='progress-outer' class='progress'></div>
+      <div id='progress-state' class='progress'>
+        <img id='progress-img' src="common/ic_av_play_over_video.png">
+      </div>
+      <div id='progress' class='progress'></div>
+      <center id='volume' class='fullscreen-center'>
+        <table style="height: 100%;">
+          <tbody>
+            <tr>
+              <td><div class='volume-bar' style='width:8px; height:64px; margin-top:64px'></div></td>
+              <td><div class='volume-bar' style='width:8px; height:80px; margin-top:48px'></div></td>
+              <td><div class='volume-bar' style='width:8px; height:96px; margin-top:32px'></div></td>
+              <td><div class='volume-bar' style='width:8px; height:112px; margin-top:16px'></div></td>
+              <td><div class='volume-bar' style='width:8px; height:128px; margin-top:0px'></div></td>
+            </tr>
+          </tbody>
+        </table>
+      </center>
+      <center class='fullscreen-center'>
+        <table style="height: 100%;">
+          <tbody>
+            <tr><td><div><img width='432' height='432' src="common/ic_av_play_over_video.png" id="play" style='display: none;'></div></td></tr>
+          </tbody>
+        </table>
+      </center>
+    </div>
+    </div>
+    <div id='splash' class='splash'>
+      <div id='innerSplash'>
+        <div>
+          <center>
+            <img src='common/icon.png' id='qrcode'/>
+          </center>
+        </div>
+      </div>
+      <div><center id='allcast-title'>AllCast</center></div>
+      <div><center><img class='splash-stores' src='common/stores-horizontal.jpg'></center></div>
+    </div>
+  </body>
+</html>
