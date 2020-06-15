@@ -16,7 +16,7 @@ window.onload = function() {
   window.controller = new Controller(window);
 
   window.castReceiverManager = cast.receiver.CastReceiverManager.getInstance();
-  window.castReceiverManager.getCastMessageBus('urn:x-cast:com.koushikdutta.cast').onMessage = function(e) {
+  window.castReceiverManager.getCastMessageBus('urn:x-cast:com.google.cast').onMessage = function(e) {
     try {
       var data = JSON.parse(e.data);
     }
